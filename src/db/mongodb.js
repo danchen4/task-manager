@@ -22,7 +22,7 @@ MongoClient.connect(
   (error, client) => {
     if (error) return console.log('Unable to connect to database!');
 
-    console.log('Connected!');Pick up groceries
+    console.log('Connected!');
 
     // Get a reference to database we want to manipulate
     const db = client.db(databaseName);
