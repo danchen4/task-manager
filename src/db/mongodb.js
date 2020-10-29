@@ -5,10 +5,10 @@
 // const MongoClient = mongodb.MongoClient;
 
 // typing out IP for localhost (127.0.0.1) removes odd bugs;
-const connectionURL = 'mongodb://127.0.0.1:27017';
-const databaseName = 'task-manager';
+// const connectionURL = 'mongodb://127.0.0.1:27017';
+// const databaseName = 'task-manager';
 
-const { MongoClient, ObjectID, ObjectId } = require('mongodb');
+// const { MongoClient, ObjectID, ObjectId } = require('mongodb');
 
 // const id = new ObjectID();
 // console.log(id.id.length);
@@ -16,16 +16,16 @@ const { MongoClient, ObjectID, ObjectId } = require('mongodb');
 // console.log(id.getTimestamp());
 
 // connect to mongodb server
-MongoClient.connect(
-  connectionURL,
-  { useNewUrlParser: true, useUnifiedTopology: true },
-  (error, client) => {
-    if (error) return console.log('Unable to connect to database!');
+// MongoClient.connect(
+//   connectionURL,
+//   { useNewUrlParser: true, useUnifiedTopology: true },
+//   (error, client) => {
+//     if (error) return console.log('Unable to connect to database!');
 
-    console.log('Connected!');
+//     console.log('Connected!');
 
-    // Get a reference to database we want to manipulate
-    const db = client.db(databaseName);
+//     // Get a reference to database we want to manipulate
+//     const db = client.db(databaseName);
 
     // Inserting (Create)
     //#region
